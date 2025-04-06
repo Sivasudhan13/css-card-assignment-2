@@ -16,12 +16,11 @@ body {
   --FONTWEIGHT: 700;
 }
 
-@media screen and (min-width: 375px) and (max-width: 1440px) {
+@media screen and (min-width: 375px) and (max-width: 1600px) {
   .container {
     background-color: var(--BG);
     width: 100%;
     height: 100vh;
-
     display: flex;
     justify-content: center;
     align-items: center;
