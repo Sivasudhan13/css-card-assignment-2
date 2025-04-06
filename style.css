@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  background-color: var(--BG);
+}
+:root {
+  --BG: hsl(233, 47%, 7%);
+  --CARD_BG: hsl(244, 38%, 16%);
+  --ACCENT: hsl(277, 64%, 61%);
+  --MAIN_HEADING: hsl(0, 0%, 100%);
+  --MAIN_PARAGRAPH: hsla(0, 0%, 100%, 0.75);
+  --STAT_HEADING: hsla(0, 0%, 100%, 0.6);
+  --Fontsize: 15px;
+  --FONTWEIGHT: 700;
+}
+
+@media screen and (min-width: 375px) and (max-width: 1440px) {
+  .container {
+    background-color: var(--BG);
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+  }
+  .sub-container {
+    background-color: var(--CARD_BG);
+    width: 800px;
+    height: 350px;
+    border-radius: 10px;
+    display: flex;
+  }
+  .content {
+    padding: 40px;
+    width: 50;
+    margin-top: 10px;
+  }
+  .heading {
+    color: var(--MAIN_HEADING);
+    font-size: 20px;
+    font-weight: var(--FONTWEIGHT);
+    padding-left: 10px;
+  }
+  .color-plate {
+    background-color: hsla(277, 85%, 26%, 0.526);
+    width: 400px;
+    height: 350px;
+    position: absolute;
+  }
+  .card-img {
+    width: 400px;
+    height: 350px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: block;
+  }
+
+  .heading span {
+    color: var(--ACCENT);
+  }
+  h1 + p {
+    color: var(--MAIN_PARAGRAPH);
+    font-size: 12px;
+    margin-top: 20px;
+    padding-left: 10px;
+  }
+  .card-counts {
+    margin-top: 40px;
+  }
+  .counts {
+    color: var(--MAIN_HEADING);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    font-size: 10px;
+    margin-bottom: -10px;
+  }
+  .counts p {
+    color: var(--STAT_HEADING);
+    display: flex;
+    flex-direction: row;
+    font-size: 10px;
+    margin-left: -10px;
+  }
+}
+/*mobile*/
+@media screen and (max-width: 375px) {
+  .container {
+    margin-top: 40px;
+    background-color: var(--BG);
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  .sub-container {
+    background-color: var(--CARD_BG);
+    width: 350px;
+    height: 900px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    margin-top: 70px;
+  }
+  .image {
+    order: 0;
+  }
+
+  .content {
+    order: 1;
+  }
+
+  .color-plate {
+    background-color: hsla(277, 85%, 26%, 0.526);
+    width: 350px;
+    height: 300px;
+    position: absolute;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+  .card-img {
+    width: 350px;
+    height: 300px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+  .content {
+    padding: 40px;
+    width: 80%;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .heading {
+    color: var(--MAIN_HEADING);
+
+    font-weight: var(--FONTWEIGHT);
+    padding-left: 10px;
+  }
+
+  .heading span {
+    color: var(--ACCENT);
+  }
+  h1 + p {
+    color: var(--MAIN_PARAGRAPH);
+    font-size: 20px;
+    margin-top: 20px;
+    padding-left: 10px;
+  }
+  .card-counts {
+    margin-top: 40px;
+  }
+  .counts {
+    color: var(--MAIN_HEADING);
+    display: flex;
+
+    flex-direction: column;
+    font-size: 13px;
+  }
+  .counts p {
+    color: var(--STAT_HEADING);
+
+    font-size: 13px;
+  }
+
+  .name {
+    margin-bottom: -10px;
+  }
+}
